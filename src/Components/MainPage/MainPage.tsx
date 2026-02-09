@@ -34,7 +34,7 @@ const MainPage = () => {
                         animate={{ scale: 1, rotate: 0 }}
                         transition={{ type: "spring", duration: 0.8 }}
                     >
-                        <h1 className={styles.successTitle}>ეგრეც ვიცოდი<br/>მიყვარხარ {'<3'}</h1>
+                        <h1 className={styles.successTitle}>ეგრეც ვიცოდი<br/>მიყვარხარ ❤️</h1>
                         <div className={styles.loveHeart}>
                             <div className={styles.heartPulse}></div>
                         </div>
