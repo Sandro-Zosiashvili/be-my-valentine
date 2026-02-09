@@ -38,7 +38,7 @@ const MainPage = () => {
                         className={styles.resultBox}
                         initial={{ scale: 0, rotate: -180 }}
                         animate={{ scale: 1, rotate: 0 }}
-                        transition={{ type: "spring", duration: 0.8 }}
+                        transition={{ type: "spring", duration: 2.5 }}
                     >
                         <h1 className={styles.successTitle}>ეგრეც ვიცოდი<br/>მიყვარხარ ❤️</h1>
                         <div className={styles.loveHeart}>
