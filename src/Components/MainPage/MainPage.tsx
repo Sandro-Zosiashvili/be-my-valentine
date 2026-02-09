@@ -1,4 +1,5 @@
 "use client"
+
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from './MainPage.module.scss'
@@ -128,7 +129,7 @@ const MainPage = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        დიახ! 💕
+                        დიახ 💕
                     </motion.button>
 
                     <button
