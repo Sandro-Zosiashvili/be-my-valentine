@@ -2,10 +2,14 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from './MainPage.module.scss'
+import {useSearchParams} from "next/navigation";
 
 const MainPage = () => {
     const [showResult, setShowResult] = useState(false);
     const [showBear, setShowBear] = useState(false);
+    const searchParams = useSearchParams();
+    const name = decodeURIComponent(searchParams.get("name") || "");
+
 
     const handleNoClick = () => {
         setShowBear(true);
@@ -54,7 +58,7 @@ const MainPage = () => {
             </div>
 
             <div className={styles.content}>
-                <h1 className={styles.title}>ანა დიმიტრიევნა, იქნები ჩემი ვალენტინი?</h1>
+                <h1 className={styles.title}>{name}, იქნები ჩემი ვალენტინი?</h1>
                 <div className={styles.bigHeart}>
                     <div className={styles.pulse}></div>
                 </div>
