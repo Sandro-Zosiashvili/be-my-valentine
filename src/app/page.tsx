@@ -5,8 +5,6 @@ import MainPage from "@/Components/MainPage/MainPage";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
       <MainPage />
-    </div>
   );
 }

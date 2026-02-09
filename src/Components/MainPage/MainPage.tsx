@@ -43,7 +43,6 @@ const MainPage = () => {
             </div>
         );
     }
-
     return (
         <div className={styles.container}>
             <div className={styles.hearts}>
