@@ -12,6 +12,7 @@ const MainPage = () => {
     const name = decodeURIComponent(searchParams.get("name") || "");
 
 
+
     const handleNoClick = () => {
         setShowBear(true);
 

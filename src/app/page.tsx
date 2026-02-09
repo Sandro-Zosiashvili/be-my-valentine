@@ -1,10 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Button from "@/Components/Button/Button";
-import MainPage from "@/Components/MainPage/MainPage";
+import { Suspense } from 'react';
+import MainPage from '@/Components/MainPage/MainPage';
 
 export default function Home() {
-  return (
-      <MainPage />
-  );
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <MainPage />
+        </Suspense>
+    );
 }
